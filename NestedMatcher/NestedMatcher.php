@@ -154,7 +154,7 @@ class NestedMatcher implements RequestMatcherInterface
     public function getRouteFilters()
     {
         if (empty($this->sortedFilters)) {
-           $this->sortedFilters = $this->sortFilters();
+            $this->sortedFilters = $this->sortFilters();
         }
 
         return $this->sortedFilters;

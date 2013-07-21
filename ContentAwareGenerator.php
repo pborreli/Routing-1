@@ -69,7 +69,7 @@ class ContentAwareGenerator extends ProviderBasedGenerator
     /**
      * Get the route by a string name
      *
-     * @param string $route
+     * @param string $name
      * @param array  $parameters
      *
      * @return SymfonyRoute
@@ -258,7 +258,7 @@ class ContentAwareGenerator extends ProviderBasedGenerator
      * @param SymfonyRoute $route
      * @param array $parameters
      */
-    protected  function unsetLocaleIfNotNeeded(SymfonyRoute $route, array &$parameters)
+    protected function unsetLocaleIfNotNeeded(SymfonyRoute $route, array &$parameters)
     {
         $locale = $this->getLocale($parameters);
         if (null !== $locale) {

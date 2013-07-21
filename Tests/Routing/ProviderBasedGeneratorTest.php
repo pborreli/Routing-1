@@ -89,11 +89,11 @@ class ProviderBasedGeneratorTest extends CmfUnitTestCase
         $this->assertContains('/some/route', $this->generator->getRouteDebugMessage('/some/route'));
     }
 
-  /**
-   * Tests the generate method with passing in a route object into generate().
-   *
-   * @expectedException \Symfony\Component\Routing\Exception\InvalidParameterException
-   */
+   /**
+    * Tests the generate method with passing in a route object into generate().
+    *
+    * @expectedException \Symfony\Component\Routing\Exception\InvalidParameterException
+    */
     public function testGenerateByRoute()
     {
         $this->generator = new ProviderBasedGenerator($this->provider);

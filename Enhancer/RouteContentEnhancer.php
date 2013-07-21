@@ -29,7 +29,6 @@ class RouteContentEnhancer implements RouteEnhancerInterface
     /**
      * @param string $routefield the field name of the route class
      * @param string $target     the field name to set from the map
-     * @param array  $hashmap    the map of class names to field values
      */
     public function __construct($routefield, $target)
     {
